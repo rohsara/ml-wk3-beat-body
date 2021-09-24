@@ -17,7 +17,7 @@ let bass, drum, perc, electro;
 let noseX = 0, noseY = 0;
 let rightWristX = 0, rightWristY = 0;
 let leftWristX = 0, leftWristY = 0;
-let rightKneeX = 0, rightKneeY = 0;
+let rightElbowX = 0, rightElbowY = 0;
 
 function preload() {
   bass = loadSound('assets/bass.mp3');
@@ -66,11 +66,11 @@ function draw() {
   checkNose();
   checkRightWrist();
   checkLeftWrist();
-  checkRightKnee();
+  checkRightElbow();
   drawNose();
   drawRightWrist();
   drawLeftWrist();
-  drawRightKnee();
+  drawRightElbow();
 }
 
 function checkNose() {
@@ -132,9 +132,9 @@ function checkLeftWrist() {
   }
 }
 
-function checkRightKnee() {
+function checkRightElbow() {
   for (let k = 0; k < 3; k++) {
-    myRects[k].checkIfInside(rightKneeX, rightKneeY);
+    myRects[k].checkIfInside(rightElbowX, rightElbowY);
   }
   isPlaying = myRects.some(r => r.isInside);
   if (isPlaying) {
@@ -188,12 +188,12 @@ function drawLeftWrist() {
   }
 }
 
-function drawRightKnee() {
-  if (poses[0] && poses[0].pose && poses[0].pose.rightKnee) {
-    rightKneeX = poses[0].pose.rightKnee.x;
-    rightKneeY = poses[0].pose.rightKnee.y;
+function drawRightElbow() {
+  if (poses[0] && poses[0].pose && poses[0].pose.rightElbow) {
+    rightElbowX = poses[0].pose.rightElbow.x;
+    rightElbowY = poses[0].pose.rightElbow.y;
     fill(0, 255, 255);
 	noStroke();
-    ellipse(rightKneeX, rightKneeY, 35, 35)
+    ellipse(rightElbowX, rightElbowY, 35, 35)
   }
 }
