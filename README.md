@@ -13,4 +13,8 @@ https://user-images.githubusercontent.com/70675423/134719451-666c66e0-cbf5-46c9-
 
 Playing 4 different beats with nose, both wrists and right elbow.
 
-Moving forward, I'd like to add different beats for each keypoint of the body. 
+# Moving Forward
+![image](https://user-images.githubusercontent.com/70675423/134720765-52efcda0-727d-4170-b379-5855ef044f01.png)
+
+Similar to Twister game, I'd like to include all the body keypoints to play different beats. 
+To gamify, more beats will add more points to the player.
