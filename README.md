@@ -9,4 +9,6 @@ Refresh the page to re-generate squares' positions.
 
 # Demo
 
+https://user-images.githubusercontent.com/70675423/134719451-666c66e0-cbf5-46c9-bf5b-fdb0c7bc3942.mp4
 
+Playing 4 different beats with nose, both wrists and right elbow.
